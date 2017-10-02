@@ -1,0 +1,16 @@
+[
+{
+  "modid": "modmt",
+  "name": "Mineaturgy",
+  "description": "Magic and nature mod.",
+  "version": "0.1",
+  "mcversion": "1.11.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["ModMCdl"], ["Camellias_"],
+  "credits": "ModMCdl m/dev 2017",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
