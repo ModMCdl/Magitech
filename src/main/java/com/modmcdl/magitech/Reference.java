@@ -18,7 +18,12 @@ public class Reference {
 //items	
 	public static enum MagitechItems {
 		
-		SALTS("salts", "ItemSalts");
+		SALTS("salts", "ItemSalts"),
+		BSALT("bsalt", "ItemBsalt"),
+		DSALT("dsalt", "ItemDsalt"),
+		ESALT("esalt", "ItemEsalt"),
+		TSALT("tsalt", "ItemTsalt"),
+		MSALT("msalt", "ItemMsalt");
 		
 		private String unlocalizedName;
 		private String registryName;
