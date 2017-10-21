@@ -1,0 +1,12 @@
+{
+    "variants": {
+            "age=0": { "model": "modmt:thaummix_0"},
+            "age=1": { "model": "modmt:thaummix_0"},
+            "age=2": { "model": "modmt:thaummix_1"},
+            "age=3": { "model": "modmt:thaummix_2"},
+            "age=4": { "model": "modmt:thaummix_2"},
+            "age=5": { "model": "modmt:thaummix_3"},
+            "age=6": { "model": "modmt:thaummix_3"},
+            "age=7": { "model": "modmt:thaummix_4"}     
+      }
+}

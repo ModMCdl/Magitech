@@ -13,6 +13,7 @@ import com.modmcdl.magitech.blocks.BlockPlanter;
 import com.modmcdl.magitech.blocks.BlockSaltblock;
 import com.modmcdl.magitech.blocks.BlockSaltpile;
 import com.modmcdl.magitech.blocks.BlockTearpile;
+import com.modmcdl.magitech.blocks.BlockThaummix;
 import com.modmcdl.magitech.blocks.BlockBloodpile;
 import com.modmcdl.magitech.blocks.BlockUniflora;
 
@@ -42,6 +43,7 @@ public class ModBlocks {
 	public static Block uniflora;
 	public static Block bonnet;
 	public static Block embersoul;
+	public static Block thaummix;
 	
 	public static void init() {
 		
@@ -60,6 +62,7 @@ public class ModBlocks {
 		uniflora = new BlockUniflora();
 		bonnet = new BlockBonnet();
 		embersoul = new BlockEmbersoul();
+		thaummix = new BlockThaummix();
 		
 	}
 	
@@ -79,6 +82,7 @@ public class ModBlocks {
 		registerBlock(uniflora);
 		registerBlock(bonnet);
 		registerBlock(embersoul);
+		registerBlock(thaummix);
 	}
 	
 	private static void registerBlock(Block block) {
@@ -97,6 +101,7 @@ public class ModBlocks {
 		GameRegistry.register(uniflora);
 		GameRegistry.register(bonnet);
 		GameRegistry.register(embersoul);
+		GameRegistry.register(thaummix);
 		ItemBlock item = new ItemBlock(block);
 		item.setRegistryName(block.getRegistryName());
 		GameRegistry.register(item);
@@ -118,6 +123,7 @@ public class ModBlocks {
 		registerRender(uniflora);
 		registerRender(bonnet);
 		registerRender(embersoul);
+		registerRender(thaummix);
 	}
 	
 	private static void registerRender(Block block) {

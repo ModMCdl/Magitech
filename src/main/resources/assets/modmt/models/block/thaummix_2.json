@@ -1,0 +1,6 @@
+{
+    "parent": "block/crop",
+    "textures": {
+        "crop": "modmt:blocks/thaum_2"
+    }
+}

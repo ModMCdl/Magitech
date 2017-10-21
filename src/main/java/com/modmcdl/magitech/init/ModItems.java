@@ -35,9 +35,11 @@ public class ModItems {
 	
 	public static Item lilacbloom;
 	public static Item hotsprout;
+	public static Item thaumseed;
 	
 	public static void init() {
 		
+		//salts
 		salts = new ItemSalts();
 		bsalt = new ItemBsalt();
 		dsalt = new ItemDsalt();
@@ -45,12 +47,15 @@ public class ModItems {
 		tsalt = new ItemTsalt();
 		msalt = new ItemMsalt();
 		
+		//foods
 		saltmeat = new ItemSaltmeat(6, .5F, false);
 		royster = new ItemRoyster(2, .3F, false);
 				
 		//seeds
 		lilacbloom = new ItemSeeds(ModBlocks.lilac, Blocks.FARMLAND).setUnlocalizedName("lilacbloom").setRegistryName(new ResourceLocation(Reference.MOD_ID, "lilacbloom")).setCreativeTab(Magitech.tabMagiplant);
 		hotsprout = new ItemSeeds(ModBlocks.embersoul, Blocks.FARMLAND).setUnlocalizedName("hotsprout").setRegistryName(new ResourceLocation(Reference.MOD_ID, "hotsprout")).setCreativeTab(Magitech.tabMagiplant);
+		thaumseed = new ItemSeeds(ModBlocks.thaummix, ModBlocks.planter).setUnlocalizedName("thaumseed").setRegistryName(new ResourceLocation(Reference.MOD_ID, "thaumseed")).setCreativeTab(Magitech.tabMagitech);
+	
 	}
 	
 	public static void register() {
@@ -66,6 +71,7 @@ public class ModItems {
 		
 		GameRegistry.register(lilacbloom);
 		GameRegistry.register(hotsprout);
+		GameRegistry.register(thaumseed);
 	}
 	
 	public static void registerRenders() {
@@ -81,6 +87,7 @@ public class ModItems {
 		
 		registerRender(lilacbloom);
 		registerRender(hotsprout);
+		registerRender(thaumseed);
 	}
 	
 	private static void registerRender(Item item) {

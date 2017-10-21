@@ -29,7 +29,8 @@ public class Reference {
 		IPIPE("uniflora", "BlockUniflora"),
 		EMBERSOUL("embersoul", "BlockEmbersoul"),
 		BONNET("bonnet", "BlockBonnet"),
-		ABSELOM("abselom", "BlockAbselom");
+		ABSELOM("abselom", "BlockAbselom"),
+		THAUMMIX("thaummix", "BlockThaummix");
 		
 		
 		private String unlocalizedName;
