@@ -34,4 +34,5 @@ public class ModCrafting {
 }
 
 // GameRegistry.addShapedRecipe(new ItemStack(item/block to craft), "xxx", "xxx", "xxx", 'x', item used);
-// GameREgistry.addShapelessRecipe(new ItemStack(Item/block to craft), ITEM, ITEM, ITEM, etc);
+// GameRegistry.addShapelessRecipe(new ItemStack(Item/block to craft), ITEM, ITEM, ITEM, etc);
+// Shaped is solid shapeless is fluid
