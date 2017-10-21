@@ -1,0 +1,12 @@
+{
+    "variants": {
+            "age=0": { "model": "modmt:embersoul_0"},
+            "age=1": { "model": "modmt:embersoul_1"},
+            "age=2": { "model": "modmt:embersoul_2"},
+            "age=3": { "model": "modmt:embersoul_2"},
+            "age=4": { "model": "modmt:embersoul_3"},
+            "age=5": { "model": "modmt:embersoul_3"},
+            "age=6": { "model": "modmt:embersoul_4"},
+            "age=7": { "model": "modmt:embersoul_5"}     
+      }
+}

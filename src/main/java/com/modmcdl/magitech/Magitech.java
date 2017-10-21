@@ -1,8 +1,12 @@
 package com.modmcdl.magitech;
 
+import com.modmcdl.magitech.init.ModBlocks;
+import com.modmcdl.magitech.init.ModCrafting;
 import com.modmcdl.magitech.init.ModItems;
 import com.modmcdl.magitech.proxy.CommonProxy;
 
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -27,6 +31,10 @@ public class Magitech {
 		@EventHandler
 		public void preInit(FMLPreInitializationEvent event)
 			{
+			//Pre-initialize Blocks
+				ModBlocks.init();
+				ModBlocks.register();	
+			//Pre-initialize Items
 				ModItems.init();
 				ModItems.register();
 			}
@@ -35,6 +43,7 @@ public class Magitech {
 		public void Init(FMLInitializationEvent event)
 			{
 				proxy.init();
+				ModCrafting.register();
 			}
 		
 		@EventHandler
@@ -42,5 +51,31 @@ public class Magitech {
 			{
 		
 			}
-
+		
+	//Creative Tabs
+		
+		public static CreativeTabs tabMagitech = new CreativeTabs("tab_magitech") {
+			
+			@Override
+			public ItemStack getTabIconItem() {
+				return new ItemStack(ModBlocks.pestle);
+			}
+			
+		};
+		public static CreativeTabs tabMagirites = new CreativeTabs("tab_magirites") {
+			
+			@Override
+			public ItemStack getTabIconItem() {
+				return new ItemStack(ModItems.esalt);
+			}
+			
+		};
+		public static CreativeTabs tabMagiplant = new CreativeTabs("tab_magiplants") {
+			
+			@Override
+			public ItemStack getTabIconItem() {
+				return new ItemStack(ModBlocks.asphodelplant);
+			
+			}
+		};
 }

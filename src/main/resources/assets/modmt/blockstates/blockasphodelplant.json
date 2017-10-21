@@ -1,0 +1,14 @@
+{
+    "variants": {
+        "facing=north,half=lower,variant=asphodelplant": { "model": "modmt:asphodelplant_bottom" },
+        "facing=north,half=upper,variant=asphodelplant": { "model": "modmt:asphodelplant_top" },
+        "facing=east,half=lower,variant=asphodelplant": { "model": "modmt:asphodelplant_bottom" },
+        "facing=east,half=upper,variant=asphodelplant": { "model": "modmt:asphodelplant_top" },
+        "facing=south,half=lower,variant=asphodelplant": { "model": "modmt:asphodelplant_bottom" },
+        "facing=south,half=upper,variant=asphodelplant": { "model": "modmt:asphodelplant_top" },
+        "facing=west,half=lower,variant=asphodelplant": { "model": "modmt:asphodelplant_bottom" },
+        "facing=west,half=upper,variant=asphodelplant": { "model": "modmt:asphodelplant_top" },
+        "half=lower": { "model": "modmt:asphodelplant_bottom" },
+        "half=upper":    { "model": "modmt:asphodelplant_top" }
+    }
+}

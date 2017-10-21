@@ -4,3 +4,29 @@ item.dsalt.name=Dark Salts
 item.esalt.name=Enriched Salts
 item.tsalt.name=Tear Salts
 item.msalt.name=Mystical Salts
+
+item.saltmeat.name=Salted Meat
+item.royster.name=Rocky Mountain Oysters
+
+item.lilacbloom.name=Dark Lilac Bloom
+item.hotsprout.name=Firesprout
+
+tile.pestle.name=Mortar and Pestle
+tile.planter.name=Planter Box
+tile.desk.name=Desk
+tile.saltblock.name=Block of Salt
+
+tile.saltpile.name=Salt Pile
+tile.bloodpile.name=Blood Salt Pile
+tile.darkpile.name=Dark Salt Pile
+tile.enrichedpile.name=Enriched Salt Pile
+tile.tearpile.name=Tear Salt Pile
+tile.mysticalpile.name=Mystical Salt Pile
+
+tile.asphodelplant.name=Asphodel
+tile.uniflora.name=Ghost Flower
+tile.bonnet.name=Dark Bonnet
+
+itemGroup.tab_magitech=Mineaturgy
+itemGroup.tab_magirites=Mineaturgy Rituals
+itemGroup.tab_magiplants=Minaturgy Botany

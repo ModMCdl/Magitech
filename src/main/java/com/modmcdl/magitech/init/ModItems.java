@@ -1,16 +1,23 @@
 package com.modmcdl.magitech.init;
 
+import com.modmcdl.magitech.Magitech;
 import com.modmcdl.magitech.Reference;
 import com.modmcdl.magitech.items.ItemBsalt;
 import com.modmcdl.magitech.items.ItemDsalt;
 import com.modmcdl.magitech.items.ItemEsalt;
 import com.modmcdl.magitech.items.ItemMsalt;
+import com.modmcdl.magitech.items.ItemRoyster;
+import com.modmcdl.magitech.items.ItemLilacbloom;
+import com.modmcdl.magitech.items.ItemSaltmeat;
 import com.modmcdl.magitech.items.ItemSalts;
 import com.modmcdl.magitech.items.ItemTsalt;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemSeeds;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
@@ -23,6 +30,12 @@ public class ModItems {
 	public static Item tsalt;
 	public static Item msalt;
 	
+	public static Item saltmeat;
+	public static Item royster;
+	
+	public static Item lilacbloom;
+	public static Item hotsprout;
+	
 	public static void init() {
 		
 		salts = new ItemSalts();
@@ -32,6 +45,12 @@ public class ModItems {
 		tsalt = new ItemTsalt();
 		msalt = new ItemMsalt();
 		
+		saltmeat = new ItemSaltmeat(6, .5F, false);
+		royster = new ItemRoyster(2, .3F, false);
+				
+		//seeds
+		lilacbloom = new ItemSeeds(ModBlocks.lilac, Blocks.FARMLAND).setUnlocalizedName("lilacbloom").setRegistryName(new ResourceLocation(Reference.MOD_ID, "lilacbloom")).setCreativeTab(Magitech.tabMagiplant);
+		hotsprout = new ItemSeeds(ModBlocks.embersoul, Blocks.FARMLAND).setUnlocalizedName("hotsprout").setRegistryName(new ResourceLocation(Reference.MOD_ID, "hotsprout")).setCreativeTab(Magitech.tabMagiplant);
 	}
 	
 	public static void register() {
@@ -41,6 +60,12 @@ public class ModItems {
 		GameRegistry.register(esalt);
 		GameRegistry.register(tsalt);
 		GameRegistry.register(msalt);
+		
+		GameRegistry.register(saltmeat);
+		GameRegistry.register(royster);
+		
+		GameRegistry.register(lilacbloom);
+		GameRegistry.register(hotsprout);
 	}
 	
 	public static void registerRenders() {
@@ -50,6 +75,12 @@ public class ModItems {
 		registerRender(esalt);
 		registerRender(tsalt);
 		registerRender(msalt);
+		
+		registerRender(saltmeat);
+		registerRender(royster);
+		
+		registerRender(lilacbloom);
+		registerRender(hotsprout);
 	}
 	
 	private static void registerRender(Item item) {
