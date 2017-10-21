@@ -20,6 +20,7 @@ public class ModCrafting {
 			GameRegistry.addShapelessRecipe(new ItemStack(ModItems.saltmeat), ModItems.salts, Items.BEEF);
 			
 			GameRegistry.addShapelessRecipe(new ItemStack(ModItems.hotsprout), Items.BEETROOT, ModItems.esalt, ModItems.msalt);
+			GameRegistry.addShapelessRecipe(new ItemStack(ModItems.lilacbloom), new ItemStack(Blocks.DOUBLE_PLANT, 1, 1), ModItems.msalt, ModItems.dsalt);
 			
 			GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.saltpile), ModItems.salts, ModItems.salts);
 			GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.bloodpile), ModItems.bsalt, ModItems.bsalt);
