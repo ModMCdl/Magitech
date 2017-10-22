@@ -1,6 +1,7 @@
 package com.modmcdl.magitech;
 
 import com.modmcdl.magitech.init.ModBlocks;
+
 import com.modmcdl.magitech.init.ModCrafting;
 import com.modmcdl.magitech.init.ModItems;
 import com.modmcdl.magitech.proxy.CommonProxy;
@@ -14,6 +15,7 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION, acceptedMinecraftVersions = Reference.ACCEPTED_VERSIONS)
 public class Magitech {

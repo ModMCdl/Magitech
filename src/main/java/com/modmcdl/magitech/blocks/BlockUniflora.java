@@ -22,9 +22,5 @@ public class BlockUniflora extends BlockBush{
 	protected boolean canSustainBush(IBlockState state) {
 		return state.getBlock() == Blocks.MYCELIUM;
 	}
-	@Override
-	public boolean canBlockStay(final World worldIn, final BlockPos pos, final IBlockState state) {
-		return worldIn.getBlockState(pos.up()).getBlock() == Blocks.MYCELIUM && super.canBlockStay(worldIn, pos, state);
-	}
 
 }

@@ -4,11 +4,13 @@ import java.util.List;
 
 import com.modmcdl.magitech.Magitech;
 import com.modmcdl.magitech.Reference;
+import com.modmcdl.magitech.init.ModBlocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockDirectional;
 import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.BlockWorkbench;
+import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyDirection;
@@ -17,6 +19,10 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.InventoryPlayer;
+import net.minecraft.init.Blocks;
+import net.minecraft.inventory.Container;
+import net.minecraft.inventory.ContainerWorkbench;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.stats.StatList;
@@ -29,12 +35,17 @@ import net.minecraft.util.Mirror;
 import net.minecraft.util.Rotation;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.world.IBlockAccess;
+import net.minecraft.world.IInteractionObject;
 import net.minecraft.world.World;
 
 public class BlockPestle extends Block {
 
 	private static final AxisAlignedBB PESTLE_BOX = new AxisAlignedBB(0, 0, 0, 1, .0625 * 7, 1);
+	
+	
 	
 	public BlockPestle() {
 		super(Material.PISTON);
@@ -75,6 +86,8 @@ public class BlockPestle extends Block {
 	public void addCollisionBoxToList(IBlockState state, World worldIn, BlockPos pos, AxisAlignedBB entityBox, List<AxisAlignedBB> collidingBoxes, Entity entityIn, boolean p_185477_7_) {
 		super.addCollisionBoxToList(pos, entityBox, collidingBoxes, PESTLE_BOX);
 	}
+
+	
 	
 
 }

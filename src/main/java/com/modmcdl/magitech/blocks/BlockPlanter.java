@@ -6,8 +6,14 @@ import com.modmcdl.magitech.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockFarmland;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.properties.PropertyInteger;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.BlockRenderLayer;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.IBlockAccess;
+import net.minecraft.world.World;
+import net.minecraftforge.common.IPlantable;
 
 public class BlockPlanter extends Block{
 	
@@ -17,6 +23,21 @@ public class BlockPlanter extends Block{
 		setRegistryName(Reference.MagitechBlocks.PLANTER.getRegistryName());
 		setCreativeTab(Magitech.tabMagitech);
 		setHardness(1.0F);
+	}
+	
+	//Can be planted on?
+	private boolean hasWater(World worldIn, BlockPos pos) {
+		return true;
+	}
+	
+	@Override
+	public boolean canSustainPlant(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing direction, IPlantable plantable) {
+		return true;
+	}
+	
+	@Override
+	public boolean isFertile(World world, BlockPos pos) {
+		return true;
 	}
 	
 	//Model Overrides
