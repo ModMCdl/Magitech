@@ -13,7 +13,7 @@ Date: 10/19/2017 6:50:23
 Installation:
 ==============================
 
-Step 1: Instal Minecraft Forge for 1.11.2
+Step 1: Install Minecraft Forge for 1.11.2
 
 Step 2: Install the Mineaturgy mod .jar to the newly created "\mods" folder
 
