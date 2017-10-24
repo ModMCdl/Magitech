@@ -8,6 +8,7 @@ import net.minecraft.block.BlockFarmland;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyInteger;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.init.Blocks;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
@@ -30,11 +31,24 @@ public class BlockPlanter extends Block{
 		return true;
 	}
 	
-	@Override
+	@Override //Allows all "bushes" to be planted on the block. Will be fixed later
 	public boolean canSustainPlant(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing direction, IPlantable plantable) {
-		return true;
+		if(world.getBlockState(pos.up()).getBlock() == Blocks.REEDS) 
+		{
+			return false;
+		}
+		
+		if(world.getBlockState(pos.up()).getBlock() == Blocks.CACTUS) 
+		{
+			return false;
+		}
+		else 
+		{
+			return true;
+		}
+		
 	}
-	
+		
 	@Override
 	public boolean isFertile(World world, BlockPos pos) {
 		return true;
