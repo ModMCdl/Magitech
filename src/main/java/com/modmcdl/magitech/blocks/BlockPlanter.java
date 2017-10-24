@@ -31,7 +31,7 @@ public class BlockPlanter extends Block{
 		return true;
 	}
 	
-	@Override //Allows all "bushes" to be planted on the block. Will be fixed later
+	@Override //Allows all "bushes" exc. reeds and cactus to be planted on the block. Will be fixed later
 	public boolean canSustainPlant(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing direction, IPlantable plantable) {
 		if(world.getBlockState(pos.up()).getBlock() == Blocks.REEDS) 
 		{
@@ -46,7 +46,6 @@ public class BlockPlanter extends Block{
 		{
 			return true;
 		}
-		
 	}
 		
 	@Override
