@@ -1,6 +1,6 @@
 package com.modmcdl.magitech;
 
-public class Reference {
+public class Reference {	
 //definitions 
 	public static final String MOD_ID = "modmt";
 	public static final String NAME = "Mineaturgy";
