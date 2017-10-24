@@ -19,7 +19,11 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION, acceptedMinecraftVersions = Reference.ACCEPTED_VERSIONS)
 public class Magitech {
+
 	
+	/*
+	 * HELLO MATT THIS IS JOSH IF YOU SEE THIS EVERYTHING WORKS!
+	 */
 	@Instance
 	public static Magitech instance;
 	
