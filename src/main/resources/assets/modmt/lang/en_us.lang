@@ -4,6 +4,7 @@ item.dsalt.name=Dark Salts
 item.esalt.name=Enriched Salts
 item.tsalt.name=Tear Salts
 item.msalt.name=Mystical Salts
+item.antikythera.name=Antikythera
 
 item.saltmeat.name=Salted Meat
 item.royster.name=Rocky Mountain Oysters
@@ -28,6 +29,7 @@ tile.asphodelplant.name=Asphodel
 tile.uniflora.name=Ghost Flower
 tile.bonnet.name=Dark Bonnet
 tile.thaummix.name=Thaumaturgist's Mix
+tile.abselom.name=Abselom's Bloom
 
 itemGroup.tab_magitech=Mineaturgy
 itemGroup.tab_magirites=Mineaturgy Rituals

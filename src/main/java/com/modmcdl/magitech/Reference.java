@@ -60,6 +60,8 @@ public class Reference {
 		TSALT("tsalt", "ItemTsalt"),
 		MSALT("msalt", "ItemMsalt"),
 		
+		ANTIKYTHERA("antikythera", "ItemAntikythera"),
+		
 		SALTMEAT("saltmeat", "ItemSaltmeat"),
 		ROYSTER("royster", "ItemRoyster"),
 		

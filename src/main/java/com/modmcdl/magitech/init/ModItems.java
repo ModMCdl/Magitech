@@ -2,6 +2,7 @@ package com.modmcdl.magitech.init;
 
 import com.modmcdl.magitech.Magitech;
 import com.modmcdl.magitech.Reference;
+import com.modmcdl.magitech.items.ItemAntikythera;
 import com.modmcdl.magitech.items.ItemBsalt;
 import com.modmcdl.magitech.items.ItemDsalt;
 import com.modmcdl.magitech.items.ItemEsalt;
@@ -29,6 +30,7 @@ public class ModItems {
 	public static Item esalt;
 	public static Item tsalt;
 	public static Item msalt;
+	public static Item antikythera;
 	
 	public static Item saltmeat;
 	public static Item royster;
@@ -47,6 +49,9 @@ public class ModItems {
 		tsalt = new ItemTsalt();
 		msalt = new ItemMsalt();
 		
+		//arcane
+		antikythera = new ItemAntikythera();
+		
 		//foods
 		saltmeat = new ItemSaltmeat(6, .5F, false);
 		royster = new ItemRoyster(2, .3F, false);
@@ -54,7 +59,7 @@ public class ModItems {
 		//seeds
 		lilacbloom = new ItemSeeds(ModBlocks.lilac, Blocks.FARMLAND).setUnlocalizedName("lilacbloom").setRegistryName(new ResourceLocation(Reference.MOD_ID, "lilacbloom")).setCreativeTab(Magitech.tabMagiplant);
 		hotsprout = new ItemSeeds(ModBlocks.embersoul, Blocks.FARMLAND).setUnlocalizedName("hotsprout").setRegistryName(new ResourceLocation(Reference.MOD_ID, "hotsprout")).setCreativeTab(Magitech.tabMagiplant);
-		thaumseed = new ItemSeeds(ModBlocks.thaummix, ModBlocks.planter).setUnlocalizedName("thaumseed").setRegistryName(new ResourceLocation(Reference.MOD_ID, "thaumseed")).setCreativeTab(Magitech.tabMagitech);
+		thaumseed = new ItemSeeds(ModBlocks.thaummix, ModBlocks.planter).setUnlocalizedName("thaumseed").setRegistryName(new ResourceLocation(Reference.MOD_ID, "thaumseed")).setCreativeTab(Magitech.tabMagiplant);
 	
 	}
 	
@@ -65,6 +70,7 @@ public class ModItems {
 		GameRegistry.register(esalt);
 		GameRegistry.register(tsalt);
 		GameRegistry.register(msalt);
+		GameRegistry.register(antikythera);
 		
 		GameRegistry.register(saltmeat);
 		GameRegistry.register(royster);
@@ -81,6 +87,7 @@ public class ModItems {
 		registerRender(esalt);
 		registerRender(tsalt);
 		registerRender(msalt);
+		registerRender(antikythera);
 		
 		registerRender(saltmeat);
 		registerRender(royster);

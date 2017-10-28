@@ -1,5 +1,6 @@
 package com.modmcdl.magitech.init;
 
+import com.modmcdl.magitech.blocks.BlockAbselom;
 import com.modmcdl.magitech.blocks.BlockAsphodelPlant;
 import com.modmcdl.magitech.blocks.BlockBonnet;
 import com.modmcdl.magitech.blocks.BlockDarkpile;
@@ -44,6 +45,7 @@ public class ModBlocks {
 	public static Block bonnet;
 	public static Block embersoul;
 	public static Block thaummix;
+	public static Block abselom;
 	
 	public static void init() {
 		
@@ -63,6 +65,7 @@ public class ModBlocks {
 		bonnet = new BlockBonnet();
 		embersoul = new BlockEmbersoul();
 		thaummix = new BlockThaummix();
+		abselom = new BlockAbselom();
 		
 	}
 	
@@ -83,6 +86,7 @@ public class ModBlocks {
 		registerBlock(bonnet);
 		registerBlock(embersoul);
 		registerBlock(thaummix);
+		registerBlock(abselom);
 	}
 	
 	private static void registerBlock(Block block) {
@@ -102,6 +106,7 @@ public class ModBlocks {
 		GameRegistry.register(bonnet);
 		GameRegistry.register(embersoul);
 		GameRegistry.register(thaummix);
+		GameRegistry.register(abselom);
 		ItemBlock item = new ItemBlock(block);
 		item.setRegistryName(block.getRegistryName());
 		GameRegistry.register(item);
@@ -124,6 +129,7 @@ public class ModBlocks {
 		registerRender(bonnet);
 		registerRender(embersoul);
 		registerRender(thaummix);
+		registerRender(abselom);
 	}
 	
 	private static void registerRender(Block block) {
