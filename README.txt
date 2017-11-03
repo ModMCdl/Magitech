@@ -1,9 +1,9 @@
 -------------------------------------------
 Mineaturgy Minecraft Mod by \m / dev\
 -------------------------------------------
-v:0.0.1 (Alpha Oct 2017)
+v:0.0.2 (Alpha Nov 2017)
 Release: Initial
-Build ID: 002
+Build ID: 102
 ModSoftID: 025-982-3A
 Lisc: ModMCdl 2017
 CA: Lily Dyer [Admin. of Ent. Tech.]
@@ -15,7 +15,7 @@ Installation:
 
 Step 1: Install Minecraft Forge for 1.11.2
 
-Step 2: Install the Mineaturgy mod .jar to the newly created "\mods" folder
+Step 2: Place the Mineaturgy mod .jar in the newly created "\mods" folder
 
 Step 3: Launch the game and enjoy!
 
