@@ -1,6 +1,17 @@
 {
     "variants": {
-        "normal": {
-            "model": "modmt:pestle" }
+            
+        "facing=south": {
+            "model": "modmt:pestle" },
+            
+        "facing=west": {
+            "model": "modmt:pestle", "y": 90 },
+            
+        "facing=north": {
+            "model": "modmt:pestle", "y": 180 },
+            
+        "facing=east": {
+            "model": "modmt:pestle", "y": 270}
+            
         }
     }

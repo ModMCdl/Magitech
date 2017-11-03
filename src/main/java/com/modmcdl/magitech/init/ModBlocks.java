@@ -17,6 +17,7 @@ import com.modmcdl.magitech.blocks.BlockTearpile;
 import com.modmcdl.magitech.blocks.BlockThaummix;
 import com.modmcdl.magitech.blocks.BlockBloodpile;
 import com.modmcdl.magitech.blocks.BlockUniflora;
+import com.modmcdl.magitech.tileenitity.TileEntityPestle;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
@@ -70,6 +71,7 @@ public class ModBlocks {
 	}
 	
 	public static void register() {
+		GameRegistry.registerTileEntity(TileEntityPestle.class, "pestle_entity");
 		registerBlock(pestle);
 		registerBlock(planter);
 		registerBlock(desk);

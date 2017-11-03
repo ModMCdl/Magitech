@@ -1,5 +1,6 @@
 package com.modmcdl.magitech;
 
+import com.modmcdl.magitech.gui.GuiHandler;
 import com.modmcdl.magitech.init.ModBlocks;
 
 import com.modmcdl.magitech.init.ModCrafting;
@@ -15,6 +16,7 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION, acceptedMinecraftVersions = Reference.ACCEPTED_VERSIONS)
@@ -35,7 +37,8 @@ public class Magitech {
 			{
 			//Pre-initialize Blocks
 				ModBlocks.init();
-				ModBlocks.register();	
+				ModBlocks.register();
+			//Pre-initialize Tile Enities
 			//Pre-initialize Items
 				ModItems.init();
 				ModItems.register();
@@ -45,6 +48,7 @@ public class Magitech {
 		public void Init(FMLInitializationEvent event)
 			{
 				proxy.init();
+				NetworkRegistry.INSTANCE.registerGuiHandler(Reference.MOD_ID, new GuiHandler());
 				ModCrafting.register();
 			}
 		
