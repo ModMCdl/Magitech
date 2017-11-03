@@ -29,7 +29,7 @@ public class PestleRecipe {
 	public void addPestleRecipe(ItemStack input1, ItemStack input2, ItemStack result, float experience) {
 		if(getPestleResult(input1, input2) != ItemStack.EMPTY) {
 			FMLLog.info("Ignored pestle recipe with conflicting input: " + input1 + " and " + input2 + " = " + result);
-			return;
+			
 		}
 		this.pestleList.put(input1, input2, result);
 		this.experienceList.put(result, Float.valueOf(experience));

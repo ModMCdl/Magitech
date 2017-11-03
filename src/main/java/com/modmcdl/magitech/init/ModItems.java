@@ -4,13 +4,18 @@ import com.modmcdl.magitech.Magitech;
 import com.modmcdl.magitech.Reference;
 import com.modmcdl.magitech.items.ItemAntikythera;
 import com.modmcdl.magitech.items.ItemBsalt;
+import com.modmcdl.magitech.items.ItemDemon_blood;
 import com.modmcdl.magitech.items.ItemDsalt;
 import com.modmcdl.magitech.items.ItemEsalt;
+import com.modmcdl.magitech.items.ItemHorn;
+import com.modmcdl.magitech.items.ItemImp_blood;
 import com.modmcdl.magitech.items.ItemMsalt;
+import com.modmcdl.magitech.items.ItemPage;
 import com.modmcdl.magitech.items.ItemRoyster;
 import com.modmcdl.magitech.items.ItemLilacbloom;
 import com.modmcdl.magitech.items.ItemSaltmeat;
 import com.modmcdl.magitech.items.ItemSalts;
+import com.modmcdl.magitech.items.ItemTears;
 import com.modmcdl.magitech.items.ItemTsalt;
 
 import net.minecraft.client.Minecraft;
@@ -30,7 +35,13 @@ public class ModItems {
 	public static Item esalt;
 	public static Item tsalt;
 	public static Item msalt;
+	
 	public static Item antikythera;
+	public static Item horn;
+	public static Item tears;
+	public static Item imp_blood;
+	public static Item demon_blood;
+	public static Item page;
 	
 	public static Item saltmeat;
 	public static Item royster;
@@ -51,6 +62,11 @@ public class ModItems {
 		
 		//arcane
 		antikythera = new ItemAntikythera();
+		horn = new ItemHorn();
+		tears = new ItemTears();
+		imp_blood = new ItemImp_blood();
+		demon_blood = new ItemDemon_blood();
+		page = new ItemPage();
 		
 		//foods
 		saltmeat = new ItemSaltmeat(6, .5F, false);
@@ -72,6 +88,12 @@ public class ModItems {
 		GameRegistry.register(msalt);
 		GameRegistry.register(antikythera);
 		
+		GameRegistry.register(horn);
+		GameRegistry.register(tears);
+		GameRegistry.register(imp_blood);
+		GameRegistry.register(demon_blood);
+		GameRegistry.register(page);
+		
 		GameRegistry.register(saltmeat);
 		GameRegistry.register(royster);
 		
@@ -88,6 +110,12 @@ public class ModItems {
 		registerRender(tsalt);
 		registerRender(msalt);
 		registerRender(antikythera);
+		
+		registerRender(horn);
+		registerRender(tears);
+		registerRender(imp_blood);
+		registerRender(demon_blood);
+		registerRender(page);
 		
 		registerRender(saltmeat);
 		registerRender(royster);

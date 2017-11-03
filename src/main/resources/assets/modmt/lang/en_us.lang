@@ -5,6 +5,11 @@ item.esalt.name=Enriched Salts
 item.tsalt.name=Tear Salts
 item.msalt.name=Mystical Salts
 item.antikythera.name=Antikythera
+item.horn.name=Unicorn Horn
+item.tears.name=Unicorn Tears
+item.imp_blood.name=Imp Blood
+item.demon_blood.name=Demon Blood
+item.page.name=Necronomicon Page
 
 item.saltmeat.name=Salted Meat
 item.royster.name=Rocky Mountain Oysters

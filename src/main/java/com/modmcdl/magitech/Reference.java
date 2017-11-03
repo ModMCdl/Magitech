@@ -61,6 +61,11 @@ public class Reference {
 		MSALT("msalt", "ItemMsalt"),
 		
 		ANTIKYTHERA("antikythera", "ItemAntikythera"),
+		HORN("horn", "ItemHorn"),
+		TEARS("tears", "ItemTears"),
+		IMP_BLOOD("imp_blood", "ItemImp_blood"),
+		DEMON_BLOOD("demon_blood", "ItemDemon_blood"),
+		PAGE("page", "ItemPage"),
 		
 		SALTMEAT("saltmeat", "ItemSaltmeat"),
 		ROYSTER("royster", "ItemRoyster"),
