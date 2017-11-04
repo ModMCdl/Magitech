@@ -6,6 +6,7 @@ import com.modmcdl.magitech.init.ModBlocks;
 import com.modmcdl.magitech.init.ModCrafting;
 import com.modmcdl.magitech.init.ModItems;
 import com.modmcdl.magitech.proxy.CommonProxy;
+import com.modmcdl.magitech.recipe.PestleRecipe;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;

@@ -12,6 +12,10 @@ public class ItemAntikythera extends Item{
 		setUnlocalizedName(Reference.MagitechItems.ANTIKYTHERA.getUnlocalizedName());
 		setRegistryName(Reference.MagitechItems.ANTIKYTHERA.getRegistryName());
 		setCreativeTab(Magitech.tabMagitech);
+		setContainerItem(this);
 
 	}
+	
+	
+	
 }

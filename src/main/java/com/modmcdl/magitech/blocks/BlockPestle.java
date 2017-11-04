@@ -25,6 +25,7 @@ import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.ContainerWorkbench;
+import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
@@ -68,7 +69,7 @@ public class BlockPestle extends Block implements ITileEntityProvider{
 	@Override //drops items from block's inventory
 	public void breakBlock(World worldIn, BlockPos pos, IBlockState state) {
 		TileEntityPestle tileentity = (TileEntityPestle)worldIn.getTileEntity(pos);
-		InventoryHelper.dropInventoryItems(worldIn, pos, tileentity);
+		InventoryHelper.dropInventoryItems(worldIn, pos, (IInventory) tileentity);
 		
 		super.breakBlock(worldIn, pos, state);
 	}

@@ -8,17 +8,21 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.IContainerListener;
+import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.items.CapabilityItemHandler;
+import net.minecraftforge.items.IItemHandler;
+import net.minecraftforge.items.SlotItemHandler;
 
 public class ContainerPestle extends Container{
 
 	private final TileEntityPestle tileentity;
 	
-	ContainerPestle(InventoryPlayer player, TileEntityPestle tileentity) {
+	ContainerPestle(InventoryPlayer player, TileEntityPestle tileentity) { //CustomSlots
 		this.tileentity = tileentity;
-		this.addSlotToContainer(new Slot(tileentity, 0, 32, 25));
-		this.addSlotToContainer(new Slot(tileentity, 1, 67, 44));
+		this.addSlotToContainer(new SlotItemHandler(tileentity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null), 0, 32, 25));
+		this.addSlotToContainer(new SlotItemHandler(tileentity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null), 1, 67, 44));
 		this.addSlotToContainer(new SlotPestleOutput(player.player, tileentity, 2, 124, 35));
 		
 		for(int y = 0; y < 3; ++y) { //Player Inv
@@ -37,11 +41,7 @@ public class ContainerPestle extends Container{
 		// TODO Auto-generated method stub
 		super.putStackInSlot(slotID, stack);
 	}
-	
-	@Override
-	public boolean canInteractWith(EntityPlayer playerIn) {
-		return this.tileentity.isUsableByPlayer(playerIn);
-	}
+
 	
 	@Override
 	public ItemStack transferStackInSlot(EntityPlayer playerIn, int index) {
@@ -81,6 +81,11 @@ public class ContainerPestle extends Container{
 		}
 		return stack;
 		
+	}
+
+	@Override
+	public boolean canInteractWith(EntityPlayer playerIn) {
+		return false;
 	}
 	
 }

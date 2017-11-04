@@ -2,7 +2,7 @@ item.salts.name=Impure Salts
 item.bsalt.name=Blood Salts
 item.dsalt.name=Dark Salts
 item.esalt.name=Enriched Salts
-item.tsalt.name=Tear Salts
+item.tsalt.name=Tearful Salts
 item.msalt.name=Mystical Salts
 item.antikythera.name=Antikythera
 item.horn.name=Unicorn Horn
@@ -27,7 +27,7 @@ tile.saltpile.name=Salt Pile
 tile.bloodpile.name=Blood Salt Pile
 tile.darkpile.name=Dark Salt Pile
 tile.enrichedpile.name=Enriched Salt Pile
-tile.tearpile.name=Tear Salt Pile
+tile.tearpile.name=Tearful Salt Pile
 tile.mysticalpile.name=Mystical Salt Pile
 
 tile.asphodelplant.name=Asphodel

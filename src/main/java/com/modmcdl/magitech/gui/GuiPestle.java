@@ -11,7 +11,7 @@ import net.minecraft.util.ResourceLocation;
 
 public class GuiPestle extends GuiContainer{
 
-	private static final ResourceLocation PESTLE_GUI_TEXTURES = new ResourceLocation(Reference.MOD_ID + ":textures/gui/gui_pestle.png");
+	private static final ResourceLocation PESTLE_GUI_TEXTURE = new ResourceLocation(Reference.MOD_ID + ":textures/gui/gui_pestle.png");
 	private final InventoryPlayer player;
 	private final TileEntityPestle tileentity;
 	
@@ -31,7 +31,7 @@ public class GuiPestle extends GuiContainer{
 	@Override
 	protected void drawGuiContainerBackgroundLayer(float partialTicks, int mouseX, int mouseY) {
 		GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
-		this.mc.getTextureManager().bindTexture(PESTLE_GUI_TEXTURES);
+		this.mc.getTextureManager().bindTexture(PESTLE_GUI_TEXTURE);
 		this.drawTexturedModalRect(this.guiLeft, this.guiTop, 0, 0, this.xSize, this.ySize);
 		
 		
