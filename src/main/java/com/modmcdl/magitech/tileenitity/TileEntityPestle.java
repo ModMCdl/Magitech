@@ -24,6 +24,8 @@ import net.minecraftforge.items.ItemStackHandler;
 
 public class TileEntityPestle extends TileEntity {
 
+	
+	
 	public ItemStackHandler inventory = new ItemStackHandler(3)
 	{
 		@Override

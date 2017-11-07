@@ -10,6 +10,16 @@ item.tears.name=Unicorn Tears
 item.imp_blood.name=Imp Blood
 item.demon_blood.name=Demon Blood
 item.page.name=Necronomicon Page
+item.crystal.name=Metallurgic Crystal
+item.flux.name=Arcane Flux
+item.powder.name=Purified Powder
+
+item.quicksilver.name=Mercury
+item.mercury_ingot.name=Temporal Mercurium
+item.mithril.name=Mithril Ingot
+item.chronotum.name=Chronotum Ingot
+item.aura_metal.name=Auraurum Ingot
+item.glass_ingot.name=Sortilegic Glass
 
 item.saltmeat.name=Salted Meat
 item.royster.name=Rocky Mountain Oysters
@@ -22,6 +32,7 @@ tile.pestle.name=Mortar and Pestle
 tile.planter.name=Planter Box
 tile.desk.name=Desk
 tile.saltblock.name=Block of Salt
+tile.levistone.name=Levistone
 
 tile.saltpile.name=Salt Pile
 tile.bloodpile.name=Blood Salt Pile

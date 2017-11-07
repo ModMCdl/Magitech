@@ -11,7 +11,7 @@ public class ItemRoyster extends ItemFood{
 		super(amount, saturation, wolfFood);
 		setUnlocalizedName(Reference.MagitechItems.ROYSTER.getUnlocalizedName());
 		setRegistryName(Reference.MagitechItems.ROYSTER.getRegistryName());
-		setCreativeTab(Magitech.tabMagitech);
+		setCreativeTab(null);
 	}
 	
 }

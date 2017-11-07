@@ -16,6 +16,7 @@ public class Reference {
 		PLANTER("planter", "BlockPlanter"),
 		DESK("desk", "BlockDesk"),
 		SALTBLOCK("saltblock", "BlockSaltblock"),
+		LEVISTONE("levistone", "BlockLevistone"),
 		
 		SALTPILE("saltpile", "BlockSaltpile"),
 		BLOODPILE("bloodpile", "BlockBloodpile"),
@@ -66,6 +67,16 @@ public class Reference {
 		IMP_BLOOD("imp_blood", "ItemImp_blood"),
 		DEMON_BLOOD("demon_blood", "ItemDemon_blood"),
 		PAGE("page", "ItemPage"),
+		CRYSTAL("crystal", "ItemCrystal"),
+		FLUX("flux", "ItemFlux"),
+		POWDER("powder", "ItemPowder"),
+		
+		QUICKSILVER("quicksilver", "ItemQuicksilver"),
+		MERCURY("mercury_ingot", "ItemMercury_ingot"),
+		MITHRIL("mithril", "ItemMithril"),
+		CHRONOTUM("chronotum", "ItemChronotum"),
+		AURAURUM("aura_metal", "ItemAura_metal"),
+		GLASS_INGOT("glass_ingot", "ItemGlass_ingot"),
 		
 		SALTMEAT("saltmeat", "ItemSaltmeat"),
 		ROYSTER("royster", "ItemRoyster"),

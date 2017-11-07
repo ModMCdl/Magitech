@@ -7,6 +7,7 @@ import com.modmcdl.magitech.blocks.BlockDarkpile;
 import com.modmcdl.magitech.blocks.BlockDesk;
 import com.modmcdl.magitech.blocks.BlockEmbersoul;
 import com.modmcdl.magitech.blocks.BlockEnrichedpile;
+import com.modmcdl.magitech.blocks.BlockLevistone;
 import com.modmcdl.magitech.blocks.BlockLilac;
 import com.modmcdl.magitech.blocks.BlockMysticalpile;
 import com.modmcdl.magitech.blocks.BlockPestle;
@@ -32,6 +33,7 @@ public class ModBlocks {
 	public static Block planter;
 	public static Block desk;
 	public static Block saltblock;
+	public static Block levistone;
 	
 	public static Block saltpile;
 	public static Block bloodpile;
@@ -54,6 +56,7 @@ public class ModBlocks {
 		planter = new BlockPlanter();
 		desk = new BlockDesk();
 		saltblock = new BlockSaltblock();
+		levistone = new BlockLevistone();
 		saltpile = new BlockSaltpile();
 		bloodpile = new BlockBloodpile();
 		darkpile = new BlockDarkpile();
@@ -76,6 +79,7 @@ public class ModBlocks {
 		registerBlock(planter);
 		registerBlock(desk);
 		registerBlock(saltblock);
+		registerBlock(levistone);
 		registerBlock(saltpile);
 		registerBlock(bloodpile);
 		registerBlock(darkpile);
@@ -96,6 +100,7 @@ public class ModBlocks {
 		GameRegistry.register(planter);
 		GameRegistry.register(desk);
 		GameRegistry.register(saltblock);
+		GameRegistry.register(levistone);
 		GameRegistry.register(saltpile);
 		GameRegistry.register(bloodpile);
 		GameRegistry.register(darkpile);
@@ -119,6 +124,7 @@ public class ModBlocks {
 		registerRender(planter);
 		registerRender(desk);
 		registerRender(saltblock);
+		registerRender(levistone);
 		registerRender(saltpile);
 		registerRender(bloodpile);
 		registerRender(darkpile);
