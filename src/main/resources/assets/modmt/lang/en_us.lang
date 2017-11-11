@@ -29,6 +29,7 @@ item.hotsprout.name=Firesprout
 item.thaumseed.name=Thaumaturgist's Mix
 
 tile.pestle.name=Mortar and Pestle
+tile.forge.name=Thaumic Forge
 tile.planter.name=Planter Box
 tile.desk.name=Desk
 tile.saltblock.name=Block of Salt

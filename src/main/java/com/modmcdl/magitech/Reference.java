@@ -4,7 +4,7 @@ public class Reference {
 //definitions 
 	public static final String MOD_ID = "modmt";
 	public static final String NAME = "Mineaturgy";
-	public static final String VERSION = "0.0.1 - Alpha";
+	public static final String VERSION = "0.0.3 - Alpha";
 	public static final String ACCEPTED_VERSIONS = "[1.11.2]";
 	
 	public static final String CLIENT_PROXY_CLASS = "com.modmcdl.magitech.proxy.ClientProxy";
@@ -13,6 +13,7 @@ public class Reference {
 	public static enum MagitechBlocks {
 		
 		PESTLE("pestle", "BlockPestle"),
+		FORGE("forge", "BlockForge"),
 		PLANTER("planter", "BlockPlanter"),
 		DESK("desk", "BlockDesk"),
 		SALTBLOCK("saltblock", "BlockSaltblock"),

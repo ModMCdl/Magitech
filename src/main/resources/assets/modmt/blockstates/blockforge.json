@@ -1,0 +1,25 @@
+{
+    "variants": {
+            
+        "burning=false,facing=south": {
+            "model": "modmt:forge" },
+        "burning=true,facing=south": {
+            "model": "modmt:forge" },
+            
+        "burning=false,facing=west": {
+            "model": "modmt:forge", "y": 90 },
+        "burning=true,facing=west": {
+            "model": "modmt:forge", "y": 90 },
+            
+        "burning=false,facing=north": {
+            "model": "modmt:forge", "y": 180 },
+        "burning=true,facing=north": {
+            "model": "modmt:forge", "y": 180 },
+            
+        "burning=false,facing=east": {
+            "model": "modmt:forge", "y": 270},
+        "burning=true,facing=east": {
+            "model": "modmt:forge", "y": 270}
+            
+        }
+    }

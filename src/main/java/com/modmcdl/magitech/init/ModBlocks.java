@@ -7,6 +7,7 @@ import com.modmcdl.magitech.blocks.BlockDarkpile;
 import com.modmcdl.magitech.blocks.BlockDesk;
 import com.modmcdl.magitech.blocks.BlockEmbersoul;
 import com.modmcdl.magitech.blocks.BlockEnrichedpile;
+import com.modmcdl.magitech.blocks.BlockForge;
 import com.modmcdl.magitech.blocks.BlockLevistone;
 import com.modmcdl.magitech.blocks.BlockLilac;
 import com.modmcdl.magitech.blocks.BlockMysticalpile;
@@ -30,6 +31,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class ModBlocks {
 	
 	public static Block pestle;
+	public static Block forge;
 	public static Block planter;
 	public static Block desk;
 	public static Block saltblock;
@@ -53,6 +55,7 @@ public class ModBlocks {
 	public static void init() {
 		
 		pestle = new BlockPestle();
+		forge = new BlockForge();
 		planter = new BlockPlanter();
 		desk = new BlockDesk();
 		saltblock = new BlockSaltblock();
@@ -76,6 +79,7 @@ public class ModBlocks {
 	public static void register() {
 		GameRegistry.registerTileEntity(TileEntityPestle.class, "pestle_entity");
 		registerBlock(pestle);
+		registerBlock(forge);
 		registerBlock(planter);
 		registerBlock(desk);
 		registerBlock(saltblock);
@@ -97,6 +101,7 @@ public class ModBlocks {
 	
 	private static void registerBlock(Block block) {
 		GameRegistry.register(pestle);
+		GameRegistry.register(forge);
 		GameRegistry.register(planter);
 		GameRegistry.register(desk);
 		GameRegistry.register(saltblock);
@@ -121,6 +126,7 @@ public class ModBlocks {
 	
 	public static void registerRenders() {
 		registerRender(pestle);
+		registerRender(forge);
 		registerRender(planter);
 		registerRender(desk);
 		registerRender(saltblock);
