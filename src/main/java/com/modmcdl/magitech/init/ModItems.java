@@ -14,6 +14,7 @@ import com.modmcdl.magitech.items.ItemFlux;
 import com.modmcdl.magitech.items.ItemGlass_ingot;
 import com.modmcdl.magitech.items.ItemHorn;
 import com.modmcdl.magitech.items.ItemImp_blood;
+import com.modmcdl.magitech.items.ItemInvpestle;
 import com.modmcdl.magitech.items.ItemMsalt;
 import com.modmcdl.magitech.items.ItemPage;
 import com.modmcdl.magitech.items.ItemPowder;
@@ -44,6 +45,8 @@ public class ModItems {
 	public static Item esalt;
 	public static Item tsalt;
 	public static Item msalt;
+	
+	public static Item invpestle;
 	
 	public static Item antikythera;
 	public static Item horn;
@@ -78,6 +81,8 @@ public class ModItems {
 		esalt = new ItemEsalt();
 		tsalt = new ItemTsalt();
 		msalt = new ItemMsalt();
+		
+		invpestle = new ItemInvpestle();
 		
 		//arcane
 		antikythera = new ItemAntikythera();
@@ -116,6 +121,9 @@ public class ModItems {
 		GameRegistry.register(esalt);
 		GameRegistry.register(tsalt);
 		GameRegistry.register(msalt);
+		
+		GameRegistry.register(invpestle);
+		
 		GameRegistry.register(antikythera);
 		
 		GameRegistry.register(horn);
@@ -149,6 +157,9 @@ public class ModItems {
 		registerRender(esalt);
 		registerRender(tsalt);
 		registerRender(msalt);
+		
+		registerRender(invpestle);
+		
 		registerRender(antikythera);
 		
 		registerRender(horn);

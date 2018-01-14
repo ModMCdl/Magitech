@@ -62,6 +62,7 @@ public class Reference {
 		TSALT("tsalt", "ItemTsalt"),
 		MSALT("msalt", "ItemMsalt"),
 		
+		INVPESTLE("invpestle", "ItemInvpestle"),
 		ANTIKYTHERA("antikythera", "ItemAntikythera"),
 		HORN("horn", "ItemHorn"),
 		TEARS("tears", "ItemTears"),

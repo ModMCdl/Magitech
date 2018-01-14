@@ -4,7 +4,7 @@
         "particle": "modmt:blocks/forge_crucible",
         "0": "modmt:blocks/forge_crucible",
         "1": "blocks/lava_still",
-        "2": "modmt:blocks/forge_orb"
+        "2": "blocks/portal"
     },
     "elements": [
         {

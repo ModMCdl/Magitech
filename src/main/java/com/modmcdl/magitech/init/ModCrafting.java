@@ -19,6 +19,8 @@ public class ModCrafting {
 			GameRegistry.addShapelessRecipe(new ItemStack(ModBlocks.saltblock), ModItems.salts, ModItems.salts, ModItems.salts, ModItems.salts);
 			GameRegistry.addShapelessRecipe(new ItemStack(ModItems.saltmeat), ModItems.salts, Items.BEEF);
 			
+			GameRegistry.addShapedRecipe(new ItemStack(ModItems.invpestle),	"   ", "BSB", "BBB", 'S', Items.STICK, 'B', Items.BRICK);
+			
 			GameRegistry.addShapelessRecipe(new ItemStack(ModItems.hotsprout), Items.BEETROOT, ModItems.esalt, ModItems.msalt);
 			GameRegistry.addShapelessRecipe(new ItemStack(ModItems.lilacbloom), new ItemStack(Blocks.DOUBLE_PLANT, 1, 1), ModItems.msalt, ModItems.dsalt);
 			
