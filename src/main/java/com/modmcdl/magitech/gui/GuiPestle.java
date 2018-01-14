@@ -3,8 +3,10 @@ package com.modmcdl.magitech.gui;
 import com.modmcdl.magitech.Reference;
 import com.modmcdl.magitech.tileenitity.TileEntityPestle;
 
+import ibxm.Player;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.GlStateManager;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.util.ResourceLocation;
@@ -12,11 +14,11 @@ import net.minecraft.util.ResourceLocation;
 public class GuiPestle extends GuiContainer{
 
 	private static final ResourceLocation PESTLE_GUI_TEXTURE = new ResourceLocation(Reference.MOD_ID + ":textures/gui/gui_pestle.png");
-	private final InventoryPlayer player;
+	private final EntityPlayer player;
 	private final TileEntityPestle tileentity;
 	
-	public GuiPestle(InventoryPlayer player, TileEntityPestle tileentity) {
-		super(new ContainerPestle(player, tileentity));
+	public GuiPestle(TileEntityPestle tileentity, EntityPlayer player) {
+		super(new ContainerPestle(tileentity, player));
 		this.player = player;
 		this.tileentity = tileentity;
 	}

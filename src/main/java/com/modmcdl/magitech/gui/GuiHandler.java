@@ -16,7 +16,7 @@ public class GuiHandler implements IGuiHandler{
 	@Override
 	public Object getServerGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
 		if(ID == PESTLE_GUI)
-			return new ContainerPestle(player.inventory, ((TileEntityPestle)world.getTileEntity(new BlockPos(x, y, z))));
+			return new ContainerPestle(((TileEntityPestle)world.getTileEntity(new BlockPos(x, y, z))), player);
 		if(ID == FORGE_GUI)
 			return new ContainerForge(player.inventory, ((TileEntityForge)world.getTileEntity(new BlockPos(x, y, z))));
 		 return null;
@@ -25,7 +25,7 @@ public class GuiHandler implements IGuiHandler{
 	@Override
 	public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
 		if(ID == PESTLE_GUI)
-			return new GuiPestle(player.inventory, ((TileEntityPestle)world.getTileEntity(new BlockPos(x, y, z))));
+			return new GuiPestle(((TileEntityPestle)world.getTileEntity(new BlockPos(x, y, z))), player);
 		if(ID == FORGE_GUI)
 			return new GuiForge(player.inventory, ((TileEntityForge)world.getTileEntity(new BlockPos(x, y, z))));
 		return null; 

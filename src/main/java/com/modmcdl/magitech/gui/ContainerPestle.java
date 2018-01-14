@@ -19,20 +19,20 @@ public class ContainerPestle extends Container{
 
 	private final TileEntityPestle tileentity;
 	
-	ContainerPestle(InventoryPlayer player, TileEntityPestle tileentity) { //CustomSlots
+	ContainerPestle(TileEntityPestle tileentity, EntityPlayer player) { //CustomSlots
 		this.tileentity = tileentity;
 		this.addSlotToContainer(new SlotItemHandler(tileentity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null), 0, 32, 25));
 		this.addSlotToContainer(new SlotItemHandler(tileentity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null), 1, 67, 44));
-		this.addSlotToContainer(new SlotPestleOutput(player.player, tileentity, 2, 124, 35));
+		this.addSlotToContainer(new SlotPestleOutput(player, player.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null), 2, 124, 35));
 		
 		for(int y = 0; y < 3; ++y) { //Player Inv
 			for(int x = 0; x < 9; ++x) {
-				this.addSlotToContainer(new Slot(player, x + y * 9 + 9, 8 + x * 18, 84 + y * 18));
+				this.addSlotToContainer(new Slot((IInventory) player, x + y * 9 + 9, 8 + x * 18, 84 + y * 18));
 			}
 		}
 		
 		for(int x = 0; x < 9; ++x) //Hotbar
-			this.addSlotToContainer(new Slot(player, x, 8 + x * 18, 142 ));
+			this.addSlotToContainer(new Slot((IInventory) player, x, 8 + x * 18, 142 ));
 		
 	}
 	

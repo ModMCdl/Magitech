@@ -10,7 +10,7 @@ import net.minecraft.util.ResourceLocation;
 
 public class GuiForge extends GuiContainer{
 
-	private static final ResourceLocation FORGE_TEXTURES = new ResourceLocation(Reference.MOD_ID + ":" + ":textures/gui/gui_thaumic_forge.png");
+	private static final ResourceLocation FORGE_TEXTURES = new ResourceLocation(Reference.MOD_ID + ":" + "textures/gui/gui_thaumic_forge.png");
 	private final InventoryPlayer player;
 	private final TileEntityForge tileentity;
 	

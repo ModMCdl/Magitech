@@ -18,8 +18,8 @@ public class SlotPestleOutput extends SlotItemHandler {
 
 	
 	
-	public SlotPestleOutput(EntityPlayer player, TileEntityPestle tileentity, int index, int xPosition, int yPosition) {
-		super((IItemHandler) tileentity, index, xPosition, yPosition);
+	public SlotPestleOutput(EntityPlayer player, IItemHandler itemhandler, int index, int xPosition, int yPosition) {
+		super(itemhandler, index, xPosition, yPosition);
 		this.player = player;
 	}
 
