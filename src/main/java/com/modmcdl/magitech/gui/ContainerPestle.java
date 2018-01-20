@@ -23,7 +23,7 @@ public class ContainerPestle extends Container{
 		this.tileentity = tileentity;
 		this.addSlotToContainer(new SlotItemHandler(tileentity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null), 0, 32, 25));
 		this.addSlotToContainer(new SlotItemHandler(tileentity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null), 1, 67, 44));
-		this.addSlotToContainer(new SlotPestleOutput(player, player.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null), 2, 124, 35));
+		this.addSlotToContainer(new SlotPestleOutput(null, tileentity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null), 2, 124, 35));
 		
 		for(int y = 0; y < 3; ++y) { //Player Inv
 			for(int x = 0; x < 9; ++x) {
